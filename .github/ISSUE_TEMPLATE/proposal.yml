@@ -1,0 +1,23 @@
+name: 设计与问题建议
+description: 提出具体例子、改图或能力缺口
+title: "[建议] "
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: 具体问题或想做的效果
+      description: 尽量带一个输入例子或指出哪张展示图的哪个位置。
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: 建议怎么改，依据是什么？
+      description: 请区分已有行为、待验证设想和仍需人工决定的部分。
+    validations:
+      required: true
+  - type: textarea
+    id: check
+    attributes:
+      label: 怎样判断改善了？
+      description: 可以是更易读的改图、可检查的关系或一个最小复现案例。
