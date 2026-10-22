@@ -10,7 +10,7 @@
 
 **2026-10-22 更新** · 目前推进到统一工作台、本地软件与叠层生成：可以从结构化内容生成法阵，调整子阵的位置、大小、旋转和整体浮起，保存后继续修改。自然语言直接生成尚未接入。
 
-[看六个当前样例](docs/gallery.md) · [一个法术怎样组织](docs/program-example.md) · [原则与路线](docs/direction.md) · [参与协作](CONTRIBUTING.md)
+[直接打开网页展示（免登录）](https://jizhishiroppu.github.io/Asterweave-public/) · [看六个当前样例](docs/gallery.md) · [一个法术怎样组织](docs/program-example.md) · [原则与路线](docs/direction.md) · [参与协作](CONTRIBUTING.md)
 
 ## 先看法阵
 
@@ -23,7 +23,7 @@
 
 *潮汐归城：162 个阵。俯视看整体构图，斜视看层次；两种视角使用同一份作品。完整图见[成果图册](docs/gallery.md)。*
 
-仓库还带有[离线展示页](index.html)：下载仓库 ZIP 并解压，双击 `index.html`，即可切换俯视／斜视、明暗主题，查看四个完整法术和两项局部试作。GitHub 文件页显示 HTML 源码；这是一份成果展示，不是生成器试玩。
+[网页展示](https://jizhishiroppu.github.io/Asterweave-public/)可直接免登录查看，支持俯视／斜视、明暗主题和 SVG 下载。也可以下载仓库 ZIP 并解压，双击 `index.html` 离线浏览。这是一份成果展示，不是生成器试玩。
 
 ## 现在可以做什么
 
@@ -60,4 +60,4 @@
 
 这里提供项目介绍、成果图和协作入口。展示图来自本项目生成结果，不含外部参考图、小说资料、完整作品数据或私有开发历史。尚未选定通用开源许可证；使用和再分发请先与维护者确认。
 
-**English:** Asterweave develops a readable, writable graphical language for magic circles and an offline creation tool. The current prototype generates layered circles from structured definitions, supports local subcircle adjustments, and saves editable works. This repository shares six current examples and an offline gallery, not the generator or its private source. Natural-language input and independent geometric readback of the layered SVGs remain unfinished. Contributions and concrete visual feedback are welcome through Issues.
+**English:** Asterweave develops a readable, writable graphical language for magic circles and an offline creation tool. The current prototype generates layered circles from structured definitions, supports local subcircle adjustments, and saves editable works. This repository shares six current examples and a [public gallery](https://jizhishiroppu.github.io/Asterweave-public/) that requires no sign-in and can also be downloaded for offline viewing. It does not include the generator or its private source. Natural-language input and independent geometric readback of the layered SVGs remain unfinished. Contributions and concrete visual feedback are welcome through Issues.

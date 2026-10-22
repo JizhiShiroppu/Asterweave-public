@@ -12,7 +12,7 @@
   const $ = id => document.getElementById(id);
   const image = $('art-image'), status = $('image-status');
   image.addEventListener('load', () => {status.textContent='点击画面，在新标签页查看完整 SVG。';});
-  image.addEventListener('error', () => {status.textContent='图片未能加载。请确认已完整解压仓库，assets 文件夹与此页面位于同一目录。';});
+  image.addEventListener('error', () => {status.textContent='图片未能加载，请刷新后重试。离线浏览时，请确认已完整解压，assets 文件夹与此页面位于同一目录。';});
   function update() {
     const work = works[selected], file = `assets/${selected}-${theme}-${mode}.svg`;
     document.documentElement.dataset.theme = theme;
