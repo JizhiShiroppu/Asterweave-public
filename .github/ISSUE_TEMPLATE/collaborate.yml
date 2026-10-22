@@ -6,7 +6,7 @@ body:
     id: interest
     attributes:
       label: 你对哪部分感兴趣？
-      description: 视觉、规则、几何、前端、测试或其他方向都可以。
+      description: 可以从当前六个样例的视觉与布局、记法与读回、工作台交互、字形或测试说明开始。
     validations:
       required: true
   - type: textarea

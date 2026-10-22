@@ -6,7 +6,7 @@ body:
     id: problem
     attributes:
       label: 具体问题或想做的效果
-      description: 尽量带一个输入例子或指出哪张展示图的哪个位置。
+      description: 请注明样例名称、俯视或斜视、明暗主题与具体位置；可以附标注图或最小输入。
     validations:
       required: true
   - type: textarea
