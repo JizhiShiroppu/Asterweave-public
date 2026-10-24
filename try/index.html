@@ -832,6 +832,8 @@ window.Studio = (() => {
 'use strict';
 // 生成线程：叠层生成和 SVG 导出放在 Worker 里，界面不卡。
 (() => {
+  // 产品的新建视角；显式写入作品，不改冻结投影算法或已有作品的间距。
+  const DEFAULT_VIEW = { mode: 'oblique', gap: 45 };
   const code = AW.workerSource + `;let current=null;self.onmessage=e=>{const m=e.data;try{
     if(m.kind==='export'){const r=AW.Layered.render(m.work);self.postMessage({id:m.id,svg:r.scene?AW.Layered.viewSVG(r,m.view):r.svg});return;}
     if(m.kind==='workshop'){const L=AW.Layered,{root,instance}=m.target;let w=L.load(m.work);if(!['layered-6','layered-7'].includes(w.version))w=L.upgradeForElements(w);
@@ -842,7 +844,7 @@ window.Studio = (() => {
     if(m.kind==='hits'){const L=AW.Layered;self.postMessage({id:m.id,hits:L.hitGeometry(L.load(m.work),m.instance,m.view)});return;}
     // 新建与打开的叠层作品都用 layered-7（跨阵骨架默认落地＋立柱）；旧版作品打开时升级，可撤销。
     const L=AW.Layered,lib=m.value.libraryEntries,old=w=>/^layered-[1-6]$/.test(w.version)?L.upgradeForOutput(w):w;
-    const work=L.isWork(m.value)?old(L.load(m.value)):L.save(m.value.input,{theme:m.value.theme||'dark',view:m.value.view||{mode:'oblique'},version:'layered-7',...(lib?{libraryEntries:lib}:{})});
+    const work=L.isWork(m.value)?old(L.load(m.value)):L.save(m.value.input,{theme:m.value.theme||'dark',view:{...${JSON.stringify(DEFAULT_VIEW)},...m.value.view},version:'layered-7',...(lib?{libraryEntries:lib}:{})});
     current=L.render(work);if(current.scene)work.scene=current.scene;
     self.postMessage({id:m.id,work,count:current.layers.length,source:L.bitmapSource(current)});
   }catch(error){self.postMessage({id:m.id,error:error.message});}};`;
@@ -853,6 +855,7 @@ window.Studio = (() => {
   worker.onerror = () => { for (const p of waiting.values()) p.reject(Error('生成器出错，请刷新页面')); waiting.clear(); };
   const call = msg => new Promise((resolve, reject) => { const id = ++seq; waiting.set(id, { resolve, reject }); worker.postMessage({ ...msg, id }); });
   Studio.engine = {
+    defaultView: (view = {}) => AW.Layered.normalizeView({ ...DEFAULT_VIEW, ...view }),
     render: value => call({ kind: 'render', value }),
     exportSVG: (work, view) => call({ kind: 'export', work, view }).then(m => m.svg),
     // 工坊：必要时升级到可编辑元素的版本（layered-6 或 7），可带一次元素修改；返回作品、单阵画面、元素清单与命中轮廓
@@ -2233,7 +2236,7 @@ window.Studio = (() => {
   let fields = [], open = false;
   try { open = !!localStorage.getItem('aw-studio-view-open'); } catch { }
   const view = () => S.work?.view || {};
-  const DEF = L.normalizeView({ mode: 'oblique' });
+  const DEF = Studio.engine.defaultView();
   const STYLES = [['beam', '柔光'], ['particles', '光粒'], ['column', '细光'], ['off', '关闭']];
   // 跨阵骨架放法（layered-7）；默认落地＋立柱，作者 2026-10-23 选定
   const FRAMES = [['groundPillars', '落地＋立柱'], ['pillars', '立柱'], ['ground', '落地'], ['segments', '分段'], ['original', '高处'], ['off', '关闭']];
@@ -3165,6 +3168,8 @@ window.Studio = (() => {
       lastRecord = r.record || null;
       if (!r.ok) { if (r.errors?.[0]?.code === 'cancelled') toast('已取消模型请求'); else failed(r, source, level); return true; }
       release(); progress = ''; emit();
+      // 这是刚生成的新作品；已保存作品从打开入口载入时仍保留自己的视角。
+      r.work.view = { ...r.work.view, gap: Studio.engine.defaultView().gap };
       S.codeDirty = false; Studio.files.newDocument(); await store.generate(r.work);
       if (r.warnings?.length) toast('拆解完成，另有 ' + r.warnings.length + ' 条可改进建议');
       return true;
