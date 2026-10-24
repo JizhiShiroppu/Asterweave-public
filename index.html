@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="description" content="Asterweave 编织星辰：一门可读、可写的法阵图形语言。查看当前法术、叠层结构与创作进展。">
+  <meta name="description" content="Asterweave 编织星辰：生成、调整和保存你的法阵。浏览作品，或打开星辰工作室试用。">
   <title>Asterweave · 编织星辰</title>
   <link rel="stylesheet" href="showcase.css">
   <script src="showcase.js" defer></script>
@@ -12,29 +12,41 @@
   <a class="skip" href="#works">跳到作品</a>
   <header class="masthead wrap">
     <a class="brand" href="#"><span class="brand-mark" aria-hidden="true">✳</span> ASTERWEAVE <span class="brand-cn">编织星辰</span></a>
-    <nav aria-label="主导航"><a href="try/">试用工作室</a><a href="#works">法阵</a><a href="#process">语言</a><a href="#progress">进展</a><a href="#join">参与</a></nav>
+    <nav aria-label="主导航"><a href="try/">试用工作室</a><a href="#works">作品</a><a href="#try-it">开始体验</a><a href="#join">反馈</a></nav>
     <button class="theme" type="button" aria-pressed="false">切换明色</button>
   </header>
   <main>
     <section class="hero wrap" aria-labelledby="intro-title">
-      <div class="hero-copy"><p class="eyebrow">A LANGUAGE WRITTEN IN CIRCLES</p><h1 id="intro-title">让法阵<br>有迹可读。</h1><p class="lead">符文写内容，几何组织结构。<br>从一个定义，到一张可以继续修改的法阵。</p><a class="cta" href="try/">打开星辰工作室 <span aria-hidden="true">↗</span></a><br><a class="text-link" href="#works">先看当前作品 ↓</a><p class="edition">0.9.0 公测 / 2026.10.24<br>片段生成 · 叠层法阵 · 局部编辑</p></div>
+      <div class="hero-copy">
+        <p class="eyebrow">MAGIC CIRCLES, MADE YOURS</p>
+        <h1 id="intro-title">让法阵<br>有迹可读。</h1>
+        <p class="lead">从一段魔法想象，<br>到一张属于你的法阵。</p>
+        <a class="cta" href="try/">打开星辰工作室 <span aria-hidden="true">↗</span></a><br>
+        <a class="text-link" href="#works">先看当前作品 ↓</a>
+        <p class="edition">0.9.0 公测 / 2026.10.24<br>生成 · 调整 · 保存</p>
+      </div>
       <figure class="hero-art"><img data-hero src="assets/tidal-city-dark-oblique.svg" alt="潮汐归城，162 个阵的斜视展开" fetchpriority="high"><figcaption><span>潮汐归城</span><span>162 个阵 / 斜视展开</span></figcaption></figure>
     </section>
     <section class="works wrap section" id="works" aria-labelledby="works-title">
-      <div class="section-head"><div><p class="eyebrow">01 / SELECTED WORKS</p><h2 id="works-title">同一份含义，不同的观看方式。</h2></div><p>三个完整法术，两项局部试作。<br>切到俯视看构图，展开层次看归属。</p></div>
+      <div class="section-head"><div><p class="eyebrow">01 / SELECTED WORKS</p><h2 id="works-title">从微光，到潮汐归城。</h2></div><p>五个样例，随意看看。<br>换个视角，也换一种气氛。</p></div>
       <div class="selectors" role="group" aria-label="选择作品">
         <button type="button" data-work="tidal-city" aria-pressed="true">01 潮汐归城</button><button type="button" data-work="moss-lamp" aria-pressed="false">02 苔灯</button><button type="button" data-work="contract" aria-pressed="false">03 契约召唤</button><button type="button" data-work="single" aria-pressed="false">04 单阵试作</button><button type="button" data-work="chain" aria-pressed="false">05 三级接口</button>
       </div>
       <div class="exhibit">
         <div class="exhibit-image"><div class="view-controls" role="group" aria-label="观看角度"><button type="button" data-mode="oblique" aria-pressed="true">斜视展开</button><button type="button" data-mode="flat" aria-pressed="false">俯视</button></div><a id="art-link" href="assets/tidal-city-dark-oblique.svg" target="_blank" rel="noopener" aria-label="打开潮汐归城完整 SVG"><img id="art-image" src="assets/tidal-city-dark-oblique.svg" alt="潮汐归城，斜视展开" decoding="async"></a></div>
-        <aside class="exhibit-note" aria-live="polite"><div><p class="eyebrow" id="work-kind">完整法术 / 样例等级 10</p><h3 id="work-title">潮汐归城</h3><p class="work-count"><strong id="work-count">162</strong> 个阵</p><p id="work-description">当前三个完整样例中规模最大的一例。先看整体，再打开完整 SVG 查看层次与局部文字带。</p></div><div><p class="look-label">可以留意</p><p id="work-look">阵的数量指实际绘出的实例。样例等级参与分级画法，不是已验证的魔法强度或能耗。</p><a class="text-link" id="download" href="assets/tidal-city-dark-oblique.svg" download>保存当前 SVG ↓</a><p class="small" id="image-status" role="status">点击画面，在新标签页查看完整 SVG。</p></div></aside>
+        <aside class="exhibit-note" aria-live="polite"><div><p class="eyebrow" id="work-kind">展示样例 / 等级 10</p><h3 id="work-title">潮汐归城</h3><p class="work-count"><strong id="work-count">162</strong> 个阵</p><p id="work-description">将城市与潮汐的想象，铺成一张多层法阵。</p></div><div><p class="look-label">换个角度看看</p><p id="work-look">先看全貌，再打开大图，找一处喜欢的细节。</p><a class="text-link" id="download" href="assets/tidal-city-dark-oblique.svg" download>保存当前 SVG ↓</a><p class="small" id="image-status" role="status">点击画面，在新标签页查看完整 SVG。</p></div></aside>
       </div>
-      <p class="footnote">图像为展示副本，不含可编辑作品数据。五例沿用已保存的画法版本；工作台新版已增加局部编辑。</p>
-      <noscript><p>未启用脚本时，可直接查看五个样例：<a href="assets/tidal-city-dark-oblique.svg">潮汐归城</a> · <a href="assets/moss-lamp-dark-oblique.svg">苔灯</a> · <a href="assets/contract-dark-oblique.svg">契约召唤</a> · <a href="assets/single-dark-oblique.svg">单阵</a> · <a href="assets/chain-dark-oblique.svg">三级接口</a>。</p></noscript>
+      <p class="footnote">图库提供展示图。想继续编辑，请在工作室保存自己的 JSON 作品。</p>
+      <noscript><p>直接查看：<a href="assets/tidal-city-dark-oblique.svg">潮汐归城</a> · <a href="assets/moss-lamp-dark-oblique.svg">苔灯</a> · <a href="assets/contract-dark-oblique.svg">契约召唤</a> · <a href="assets/single-dark-oblique.svg">单阵</a> · <a href="assets/chain-dark-oblique.svg">三级接口</a>。</p></noscript>
     </section>
-    <section class="language wrap section" id="process" aria-labelledby="language-title"><div class="section-head"><div><p class="eyebrow">02 / HOW IT IS WRITTEN</p><h2 id="language-title">画面之前，先有要表达的内容。</h2></div><p>每个有含义的元素都有规则。<br>可自由调整的属性，留给构图与美感。</p></div><div class="layers"><article><span>01</span><h3>含义</h3><p>法术说什么。<br>定义、动作、角色与成员。</p></article><article><span>02</span><h3>记法</h3><p>怎样写出来。<br>阵、语句、嵌套与引用。</p></article><article><span>03</span><h3>布局</h3><p>怎样放得合适。<br>位置、大小、角度与展开。</p></article><article><span>04</span><h3>字形</h3><p>词长什么样。<br>由词表识读，保留原文。</p></article></div><div class="reading"><h3>写出以后，还要能读回。</h3><p>既有平面生成链已完成代表性法术的几何读回；当前工作室也能从本项目的紧凑 SVG 读取结构。旧版 SVG 与展示副本的能力不同，不支持任意图片识别。有损字形不能反推出任意原文。</p></div></section>
-    <section class="wrap section" id="progress" aria-labelledby="progress-title"><div class="section-head"><div><p class="eyebrow">03 / IN THE WORKSHOP</p><h2 id="progress-title">已经能生成，也能继续修改。</h2></div><p>本地软件优先，普通网站并行。<br>当前仍是持续完善中的创作工具。</p></div><div class="progress-grid"><div class="progress-now"><p class="eyebrow">当前已实现</p><h3>从内容，到作品。</h3><ul><li><strong>片段与结构生成</strong><span>使用自己的 DeepSeek 临时 Key 整理魔法描述，也可直接编辑伪代码或结构节点。</span></li><li><strong>局部与外观调整</strong><span>拖动子阵，调整大小、旋转与浮起；切换俯斜视角、明暗主题、配色与光晕。</span></li><li><strong>保存后接着做</strong><span>作品留在当前浏览器，可导出 JSON 继续编辑，以及 SVG／PNG 画面。</span></li></ul></div><div class="progress-next"><p class="eyebrow">还在推进</p><h3>可用之外，还要好用。</h3><p>复杂结构的遮挡与排布、独立创作的体验、更多局部编辑能力，以及不同版本的读回边界。</p><p>模型可能误解描述，生成后请检查结构。网站不提供共享 Key；调用费用由你的模型账户承担。</p><div class="availability"><a href="try/">进入网页版试用 →</a><br>Key 仅留在当前页面内存，刷新后清除。<br>请求由浏览器直接发送到 DeepSeek。</div></div></div></section>
-    <section class="join wrap section" id="join"><div><p class="eyebrow">04 / AN OPEN INVITATION</p><h2>从一个具体的小问题，<br>一起往前做。</h2><p>一处遮挡、一张改图、一条读回规则，<br>或一句更容易懂的说明，都可以成为起点。</p></div><div class="join-actions"><a class="cta" href="https://github.com/JizhiShiroppu/Asterweave-public/issues/new/choose">参与讨论 <span aria-hidden="true">↗</span></a><a class="text-link" href="https://github.com/JizhiShiroppu/Asterweave-public">在 GitHub 看项目 →</a></div></section>
+    <section class="wrap section" id="try-it" aria-labelledby="try-title">
+      <div class="section-head"><div><p class="eyebrow">02 / TRY THE STUDIO</p><h2 id="try-title">从示例开始，做自己的法阵。</h2></div><p>免安装，免登录。<br>打开就能看，也能动手改。</p></div>
+      <div class="progress-grid">
+        <div class="progress-now"><p class="eyebrow">直接体验</p><h3>看一看，也改一改。</h3><ul><li><strong>打开示例</strong><span>从潮汐归城、苔灯或一张小试作开始。</span></li><li><strong>调整画面</strong><span>试试构图、配色、光晕与不同观看角度。</span></li><li><strong>带走作品</strong><span>导出 SVG／PNG 保存画面，JSON 留待继续编辑。</span></li></ul></div>
+        <div class="progress-next"><p class="eyebrow">从描述生成</p><h3>写下你的魔法想象。</h3><p>使用自己的 DeepSeek API Key。描述直接发送给 DeepSeek，调用费用由你的模型账户承担；Key 仅留在当前页面内存，刷新或关闭后清除。</p><p>无需 Key 也能看示例、手工编辑和导出。作品保留在当前浏览器，重要作品请另存 JSON。生成结果可以继续调整。</p><div class="availability"><a href="try/">打开星辰工作室 →</a></div></div>
+      </div>
+    </section>
+    <section class="join wrap section" id="join"><div><p class="eyebrow">03 / YOUR FEEDBACK</p><h2>你想做出<br>怎样的法阵？</h2><p>一张喜欢的画面，一处不顺手的操作，<br>或一个想实现的效果，都欢迎告诉我们。</p></div><div class="join-actions"><a class="cta" href="https://github.com/JizhiShiroppu/Asterweave-public/issues/new/choose">留下反馈 <span aria-hidden="true">↗</span></a><a class="text-link" href="https://github.com/JizhiShiroppu/Asterweave-public">在 GitHub 看项目 →</a></div></section>
   </main>
   <footer class="wrap footer"><span>ASTERWEAVE / 编织星辰</span><p>公开试用 · 2026.10.24<br>展示图由本项目生成。使用与再分发请先与维护者确认。</p><a href="#">回到顶部 ↑</a></footer>
 </body>

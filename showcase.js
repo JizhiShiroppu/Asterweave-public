@@ -1,11 +1,11 @@
 'use strict';
 (() => {
   const works = {
-    'moss-lamp': {title:'苔灯',count:18,kind:'完整法术 / 样例等级 3',description:'苔光成形、脚边导引、静夜维持、归途熄光。从一个较小的完整法术开始，观察定义如何嵌套。',look:'沿符文带观察内容，再看子阵与父阵之间的接口。光柱连接已有的归属，不增加能量流向。'},
-    contract: {title:'契约召唤',count:47,kind:'完整法术 / 样例等级 5',description:'契约与召唤内容组成多层结构。俯视观察整体排布，斜视辨认子阵和符文带的层次。',look:'同一个阵内，骨架、符文环带与盘心也有不同高度。高度改变呈现，不增加法术含义。'},
-    'tidal-city': {title:'潮汐归城',count:162,kind:'完整法术 / 样例等级 10',description:'当前三个完整样例中规模最大的一例。先看整体，再打开完整 SVG 查看层次与局部文字带。',look:'阵的数量指实际绘出的实例。样例等级参与分级画法，不是已验证的魔法强度或能耗。'},
-    single: {title:'守光环',count:1,kind:'局部试作 / 单阵',description:'把一个阵单独展开，看符文环带、护持骨架和盘心怎样形成内部层次。',look:'符文与包裹它的结构保持同组。部位浮起属于布局；切回俯视后仍保留同一构图。'},
-    chain: {title:'接口与连接',count:3,kind:'局部试作 / 三级归属',description:'灯座维持聚光，聚光承接微光。三个阵分别保留自己的直属父子接口。',look:'看下层接口如何连接上层子阵。新版工作台移动子阵时，其后代、接口和柔光柱一起跟随。'}
+    'moss-lamp': {title:'苔灯',count:18,kind:'展示样例 / 等级 3',description:'脚边的微光，静夜里的引路灯。',look:'换到俯视，看看这盏小灯的完整轮廓。'},
+    contract: {title:'契约召唤',count:47,kind:'展示样例 / 等级 5',description:'契约与召唤交叠，细密的符文围绕中心展开。',look:'在明暗主题之间切换，找一种喜欢的气氛。'},
+    'tidal-city': {title:'潮汐归城',count:162,kind:'展示样例 / 等级 10',description:'将城市与潮汐的想象，铺成一张多层法阵。',look:'先看全貌，再打开大图，找一处喜欢的细节。'},
+    single: {title:'守光环',count:1,kind:'局部试作 / 单阵',description:'从一圈守光环，看看法阵里的细节。',look:'放大画面，看看环带与中心的不同层次。'},
+    chain: {title:'接口与连接',count:3,kind:'局部试作 / 三层',description:'三层微光逐次展开，一份小巧的叠层试作。',look:'试试俯视和斜视，两种角度各有趣味。'}
   };
   let selected = 'tidal-city', mode = 'oblique', theme = 'dark';
   const $ = id => document.getElementById(id);

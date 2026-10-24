@@ -1,42 +1,47 @@
-# 当前成果图册
+# 效果图册
 
-图库保留五个展示样例：三个完整法术，两项局部试作；都来自已保存的 `layered-4` 作品。默认展示潮汐归城。当前[网页版工作室](https://jizhishiroppu.github.io/Asterweave-public/try/)采用 `layered-7`，继续按记录版本支持旧作品，并提供局部编辑、配色与动效。
-
-[直接打开网页展示（免登录）](https://jizhishiroppu.github.io/Asterweave-public/)，可在同一页面切换明暗与俯斜视角；下载仓库后也可打开 `index.html` 离线浏览。下面的图片可直接打开查看细节。
+五个样例，看看不同规模与观看角度的效果。[网页展示](https://jizhishiroppu.github.io/Asterweave-public/)默认打开潮汐归城，也可以直接[进入工作室试用](https://jizhishiroppu.github.io/Asterweave-public/try/)。
 
 ## 潮汐归城
 
 ![潮汐归城 · 斜视](../assets/tidal-city-dark-oblique.svg)
 
-162 个阵，样例等级 10。先看整体，再放大查看局部；数量表示实际绘出的阵实例，不代表独立定义数或真实魔法强度。[看俯视](../assets/tidal-city-dark-flat.svg)。
+规模较大的一例。先看整体，再打开完整图片放大查看。
+
+深色：[斜视](../assets/tidal-city-dark-oblique.svg) · [俯视](../assets/tidal-city-dark-flat.svg)；明色：[斜视](../assets/tidal-city-light-oblique.svg) · [俯视](../assets/tidal-city-light-flat.svg)。
 
 ## 苔灯
 
 ![苔灯 · 斜视](../assets/moss-lamp-dark-oblique.svg)
 
-18 个阵，样例等级 3。内容从苔光成形、脚边导引、静夜维持到归途熄光；适合从一个较小的完整法术观察定义与嵌套。[看俯视](../assets/moss-lamp-dark-flat.svg)。
+脚边的一点微光，沿来路导引，最后安静熄灭。也可打开[苔灯小页](program-example.md)对照两种视角。
+
+深色：[斜视](../assets/moss-lamp-dark-oblique.svg) · [俯视](../assets/moss-lamp-dark-flat.svg)；明色：[斜视](../assets/moss-lamp-light-oblique.svg) · [俯视](../assets/moss-lamp-light-flat.svg)。
 
 ## 契约召唤
 
 ![契约召唤 · 斜视](../assets/contract-dark-oblique.svg)
 
-47 个阵，样例等级 5。观察多个定义在同一作品中的层次、符文带与父子接口。[看俯视](../assets/contract-dark-flat.svg)。
+多层圆环组成的完整法阵，可以对比整体轮廓与局部细节。
 
-## 两项局部试作
+深色：[斜视](../assets/contract-dark-oblique.svg) · [俯视](../assets/contract-dark-flat.svg)；明色：[斜视](../assets/contract-light-oblique.svg) · [俯视](../assets/contract-light-flat.svg)。
 
-| 守光环 · 单阵 | 接口与连接 · 三级 |
-| --- | --- |
-| ![单阵](../assets/single-dark-oblique.svg) | ![三级连接](../assets/chain-dark-oblique.svg) |
-| 看符文环带、骨架和盘心的部位浮起。 | 看灯座、聚光、微光之间的直属父子关系。 |
+## 守光环 · 单阵试作
 
-这些是局部观察样例，不作为完整法术的分级验收。浮起高度属于布局；连接柱复写已有归属，不增加定义、执行顺序或能量流向。
+![守光环 · 斜视](../assets/single-dark-oblique.svg)
 
-## 怎样理解这些图
+把单个法阵放大，近看环带与纹样。
 
-符文承担内容，几何组织结构，布局安排位置、大小和层次。俯视与斜视是同一作品的不同观看方式，斜视不是新的三维法术含义。背景星点默认关闭，阵内星轨保留。
+深色：[斜视](../assets/single-dark-oblique.svg) · [俯视](../assets/single-dark-flat.svg)；明色：[斜视](../assets/single-light-oblique.svg) · [俯视](../assets/single-light-flat.svg)。
 
-五例已核对保存的图层结构与输入一致，但尚不能据此声称独立 SVG 几何读回通过。公开副本移除了完整作品元数据、内部含义属性和原始片段，密集字形路径保留六位小数以减小体积，仅供展示。可编辑作品仍需工具保存的完整 JSON。
+## 三级试作
 
-旧图样与旧画板已从当前展示撤下，公开库提交历史可供回查。
+![三级试作 · 斜视](../assets/chain-dark-oblique.svg)
 
-[返回项目介绍](../README.md) · [看内容组织示例](program-example.md)
+一个较小的层叠样例，对比俯视与斜视的观感。
+
+深色：[斜视](../assets/chain-dark-oblique.svg) · [俯视](../assets/chain-dark-flat.svg)；明色：[斜视](../assets/chain-light-oblique.svg) · [俯视](../assets/chain-light-flat.svg)。
+
+本页 SVG 用于展示。想保存后继续编辑自己的作品，请在工作室导出 JSON。
+
+[返回项目介绍](../README.md) · [打开工作室](https://jizhishiroppu.github.io/Asterweave-public/try/) · [留下体验反馈](../CONTRIBUTING.md)
