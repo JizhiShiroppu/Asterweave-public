@@ -4,13 +4,13 @@
 
 符文写内容，几何组织结构。我希望法阵上的每个有含义的元素都能说清楚、读回来，也能在修改后继续保存和使用。
 
-![空痕·裂 · 斜视展开](assets/rift-dark-oblique.svg)
+![潮汐归城 · 斜视展开](assets/tidal-city-dark-oblique.svg)
 
-*空痕·裂：103 个阵组成的完整法术样例。斜视把层次展开，接口与柔光柱显示已有的父子归属。它们不代表新增的能量流向。*
+*潮汐归城：162 个阵组成的完整法术样例。斜视把层次展开，接口与柔光柱显示已有的父子归属。它们不代表新增的能量流向。*
 
 **2026-10-24 更新 · 0.9.0 公测** · 现在可以在浏览器里试用星辰工作室：生成法阵、调整结构与构图、保存作品；也可以使用自己的 DeepSeek 临时 Key，把魔法描述整理成结构后生成。
 
-[打开星辰工作室（免登录）](https://jizhishiroppu.github.io/Asterweave-public/try/) · [网页展示](https://jizhishiroppu.github.io/Asterweave-public/) · [看六个展示样例](docs/gallery.md) · [一个法术怎样组织](docs/program-example.md) · [原则与路线](docs/direction.md) · [参与协作](CONTRIBUTING.md)
+[打开星辰工作室（免登录）](https://jizhishiroppu.github.io/Asterweave-public/try/) · [网页展示](https://jizhishiroppu.github.io/Asterweave-public/) · [看五个展示样例](docs/gallery.md) · [一个法术怎样组织](docs/program-example.md) · [原则与路线](docs/direction.md) · [参与协作](CONTRIBUTING.md)
 
 ## 直接试用
 
@@ -54,7 +54,7 @@
 - 当前工作室支持从本项目的紧凑 SVG 读取结构；旧版 SVG 可能缺少必要记号，不能把借作品资料补全的结果当作独立几何识读。
 - 有损字形不能反推出任意原文；不支持任意图片识别，也不模拟真实魔法效果、耗时或能量。
 
-展示图库里的 SVG 仅保留绘图数据，不能当作完整作品重新载入编辑。六例沿用已保存的 `layered-4`；当前工作室采用 `layered-7`，底层保留旧版本重建；工作室打开旧作品时会升级到当前画法，可撤销。要继续编辑自己的作品，请保存工作室导出的完整 JSON。
+展示图库里的 SVG 仅保留绘图数据，不能当作完整作品重新载入编辑。五例沿用已保存的 `layered-4`；当前工作室采用 `layered-7`，底层保留旧版本重建；工作室打开旧作品时会升级到当前画法，可撤销。要继续编辑自己的作品，请保存工作室导出的完整 JSON。
 
 ## 接下来一起改善什么
 
