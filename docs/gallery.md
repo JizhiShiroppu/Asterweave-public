@@ -1,6 +1,6 @@
 # 当前成果图册
 
-更新于 2026-10-22。四个完整法术，两项局部试作；都来自已保存的 `layered-4` 作品。当前工作台默认 `layered-5`，继续支持这些作品，并增加局部草稿编辑。
+图库沿用 2026-10-22 的六份展示副本。四个完整法术，两项局部试作；都来自已保存的 `layered-4` 作品。当前[网页版工作室](https://jizhishiroppu.github.io/Asterweave-public/try/)采用 `layered-7`，继续按记录版本支持旧作品，并提供局部编辑、配色与动效。
 
 [直接打开网页展示（免登录）](https://jizhishiroppu.github.io/Asterweave-public/)，可在同一页面切换明暗与俯斜视角；下载仓库后也可打开 `index.html` 离线浏览。下面的图片可直接打开查看细节。
 
